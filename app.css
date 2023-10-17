@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: cadetblue;
+  color: whitesmoke;
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid whitesmoke;
+}
+
+.cell {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid whitesmoke;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 3rem;
+  outline: none;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  background: transparent;
+  padding-inline: 1rem;
+  padding-block: 1.2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: whitesmoke;
+  color: cadetblue;
+}
